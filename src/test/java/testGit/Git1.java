@@ -2,6 +2,11 @@ package testGit;
 
 public class Git1 {
 	
-	//adding comment 1
+	
+	//adding commnet 2
+	
+	public void test1() {
+		
+	}
 
 }
