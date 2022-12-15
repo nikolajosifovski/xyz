@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="exercises.CheckBoxes">
+        <methods>
+          <include name="testCheckboxes"/>
+          <include name="testSetup"/>
+        </methods>
+      </class> <!-- exercises.CheckBoxes -->
+      <class name="exercises.DropDownMenu">
+        <methods>
+          <include name="testSetup"/>
+          <include name="testMenu3"/>
+          <include name="testTeardown"/>
+        </methods>
+      </class> <!-- exercises.DropDownMenu -->
+      <class name="exercises.ElementLocators">
+        <methods>
+          <include name="xpathTest"/>
+          <include name="testSetup"/>
+        </methods>
+      </class> <!-- exercises.ElementLocators -->
+      <class name="exercises.Locators">
+        <methods>
+          <include name="close"/>
+          <include name="setup"/>
+          <include name="testEmptyCart"/>
+        </methods>
+      </class> <!-- exercises.Locators -->
+      <class name="exercises.Clicking">
+        <methods>
+          <include name="testMouseOver"/>
+          <include name="testSetup"/>
+          <include name="testDoubleClick"/>
+          <include name="rightClick1"/>
+        </methods>
+      </class> <!-- exercises.Clicking -->
+      <class name="exercises.DemoSwagLabsTesting">
+        <methods>
+          <include name="testOrders"/>
+          <include name="testLogout"/>
+          <include name="setup"/>
+          <include name="testEmptyCart"/>
+          <include name="addProductToCart"/>
+          <include name="testSoring"/>
+          <include name="dropDownTest"/>
+        </methods>
+      </class> <!-- exercises.DemoSwagLabsTesting -->
+      <class name="exercises.TestNG">
+        <methods>
+          <include name="classSetup"/>
+          <include name="methodSetup"/>
+          <include name="suiteTeardown"/>
+          <include name="methodTeardown"/>
+          <include name="suiteSetup"/>
+          <include name="classTeardon"/>
+        </methods>
+      </class> <!-- exercises.TestNG -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

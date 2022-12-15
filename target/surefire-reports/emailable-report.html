@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">9</td><td class="numi">9</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">22.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Surefire test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">testCases.LoginPageTest</td><td><a href="#m1"><b>loginWithinvalidUserName</b>  </a></td><td class="numi">1</td><td>1670672810186</td><td class="numi">704</td></tr><tr class="failedodd"><td><a href="#m2"><b>validLogin</b>  </a></td><td class="numi">1</td><td>1670672812979</td><td class="numi">711</td></tr>
+<tr><th colspan="4">Surefire test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">testCases.RegisterPageTest</td><td><a href="#m3"><b>registerNewUserWithInvalidEmail_003</b>  </a></td><td class="numi">1</td><td>1670672815206</td><td class="numi">1334</td></tr><tr class="passedodd"><td><a href="#m4"><b>registerNewUserWithValidEmail_002</b>  </a></td><td class="numi">1</td><td>1670672818002</td><td class="numi">1702</td></tr>
+<tr class="passedeven"><td rowspan="3">testCases.SearchTest</td><td><a href="#m5"><b>searchForExistingProduct_001</b>  </a></td><td class="numi">1</td><td>1670672824377</td><td class="numi">1214</td></tr><tr class="passedeven"><td><a href="#m6"><b>searchForItemWithTwoCharacters004</b>  </a></td><td class="numi">1</td><td>1670672827562</td><td class="numi">659</td></tr><tr class="passedeven"><td><a href="#m7"><b>searchForNonExistingProduct_002</b>  </a></td><td class="numi">1</td><td>1670672829672</td><td class="numi">643</td></tr>
+<tr class="passedodd"><td rowspan="3">exercises.TestNG</td><td><a href="#m8"><b>test001</b>  </a></td><td class="numi">1</td><td>1670672813807</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m9"><b>test002</b>  </a></td><td class="numi">1</td><td>1670672813808</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m10"><b>test003</b>  </a></td><td class="numi">1</td><td>1670672813808</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">lesson3.SearchTest</td><td><a href="#m11"><b>validateSearchResults</b>  </a></td><td class="numi">1</td><td>1670672821695</td><td class="numi">1274</td></tr>
+</table>
+<h1>Surefire test</h1>
+<h2 id="m1">testCases.LoginPageTest:loginWithinvalidUserName</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;message-error validation-summary-errors&quot;]/ul&quot;}
+  (Session info: chrome=108.0.5359.95)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;JOSIFOVSKI-N&apos;, ip: &apos;192.168.3.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\NIKOLA~1.JOS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55566}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edc798dd6eaf0a6b6bdb130aa2601f96
+*** Element info: {Using=xpath, value=//div[@class=&quot;message-error validation-summary-errors&quot;]/ul}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at testCases.LoginPageTest.loginWithinvalidUserName(LoginPageTest.java:54)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">testCases.LoginPageTest:validLogin</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;ico-account&apos;]&quot;}
+  (Session info: chrome=108.0.5359.95)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;JOSIFOVSKI-N&apos;, ip: &apos;192.168.3.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\NIKOLA~1.JOS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0299ebcadbde46b22ddb46706cf6944
+*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+<br/>at testCases.LoginPageTest.validLogin(LoginPageTest.java:37)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">exercises.TestNG:test001</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">testCases.SearchTest:searchForExistingProduct_001</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">testCases.SearchTest:searchForNonExistingProduct_002</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">exercises.TestNG:test003</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">testCases.RegisterPageTest:registerNewUserWithValidEmail_002</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">testCases.SearchTest:searchForItemWithTwoCharacters004</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">exercises.TestNG:test002</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">testCases.RegisterPageTest:registerNewUserWithInvalidEmail_003</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">lesson3.SearchTest:validateSearchResults</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
